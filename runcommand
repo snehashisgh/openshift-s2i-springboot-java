@@ -1,0 +1,6 @@
+#!/bin/sh
+set +e
+id
+whoami
+keytool -import -alias usalshdedf04.aln.experian.com -keystore "/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.191.b13-0.fc29.x86_64/jre/lib/security/cacerts" -file /data2/public_cert.cer -storepass changeit -noprompt
+exec tail -f /dev/null
