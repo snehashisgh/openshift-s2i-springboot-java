@@ -5,7 +5,7 @@
 FROM openshift/base-centos7
 MAINTAINER Snehashis Ghosh snehashis.ghosh@gmail.com
 # HOME in base image is /opt/app-root/src
-
+COPY . /opt/app-root/src
 # Builder version
 ENV BUILDER_VERSION 1.0
 
