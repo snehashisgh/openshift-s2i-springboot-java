@@ -1,0 +1,11 @@
+#!/bin/sh
+if ! whoami &> /dev/null; then
+  if [ -w /etc/passwd ]; then
+      echo "testuser:x:$(id -u):0:testuser user:${HOME}:/bin/bash" >> /etc/passwd
+
+
+
+                                 fi
+                                 fi
+                                 exec "$@"
+~
